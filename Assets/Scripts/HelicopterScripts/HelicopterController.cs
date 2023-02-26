@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class HelicopterController : MonoBehaviour
 {
     [SerializeField]
-    private Text score;
+    private Text soldiersRescuedTF;
+    [SerializeField]
+    private Text peopleInHelicopterTF;
+
     private int peopleInHelicopter = 0;
 
     void Update()
@@ -18,6 +21,7 @@ public class HelicopterController : MonoBehaviour
     {
         if (peopleInHelicopter < 3)
         {
+            peopleInHelicopterTF.text = AddIntToString(peopleInHelicopterTF.text);
             peopleInHelicopter += 1;
             Destroy(personToRemove);
         }
@@ -32,10 +36,16 @@ public class HelicopterController : MonoBehaviour
     {
         if (peopleInHelicopter > 0)
         {
-            int currScore = int.Parse(score.text);
-            currScore += peopleInHelicopter;
-            score.text = currScore.ToString();
+            soldiersRescuedTF.text = AddIntToString(soldiersRescuedTF.text, peopleInHelicopter);
+            peopleInHelicopterTF.text = "0";
             peopleInHelicopter = 0;
         }
+    }
+
+    private string AddIntToString(string text, int amountToAdd = 1)
+    {
+        int textAsInt = int.Parse(text);
+        textAsInt += amountToAdd;
+        return textAsInt.ToString();
     }
 }

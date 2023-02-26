@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class HelicopterCollision : MonoBehaviour
 {
-    [SerializeField] HelicopterController helicopterController;
+    [SerializeField] private HelicopterController helicopterController;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Tree"))
         {
             //TODO: Show gameover screen
-        }
-        else if (collision.collider.CompareTag("Person"))
-        {
-            helicopterController.CollectPerson(collision.collider.gameObject);   
         }
 
     }
@@ -24,6 +20,10 @@ public class HelicopterCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Hospital"))
         {
             helicopterController.UnloadPeople();
+        }
+        if (collision.gameObject.CompareTag("Person"))
+        {
+            helicopterController.CollectPerson(collision.gameObject);
         }
     }
 }

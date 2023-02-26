@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class HelicopterMovement : MonoBehaviour
 {
-    public float moveSpeed;
-    public Rigidbody2D rb;
+    [SerializeField]
+    private float moveSpeed;
+    [SerializeField]
+    private Rigidbody2D rb;
+
     private Vector2 moveDirection;
 
     // Update is called once per frame

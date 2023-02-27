@@ -5,12 +5,14 @@ using UnityEngine;
 public class HelicopterCollision : MonoBehaviour
 {
     [SerializeField] private HelicopterController helicopterController;
+    [SerializeField] private AudioSource crashAudioSrc;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Tree"))
         {
             //TODO: Show gameover screen
+            crashAudioSrc.Play();
         }
 
     }

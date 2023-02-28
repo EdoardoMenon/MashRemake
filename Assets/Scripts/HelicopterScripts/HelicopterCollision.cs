@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HelicopterCollision : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class HelicopterCollision : MonoBehaviour
     {
         if (collision.collider.CompareTag("Tree"))
         {
-            //TODO: Show gameover screen
             crashAudioSrc.Play();
+            SceneManager.LoadScene("DefeatScreen");
         }
 
     }

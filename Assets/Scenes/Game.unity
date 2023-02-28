@@ -4530,6 +4530,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 246319662, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
+      propertyPath: moveSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 246319664, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
       propertyPath: m_Size.x
       value: 3e-45

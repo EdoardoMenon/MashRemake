@@ -175,6 +175,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.63, y: 0.53}
   m_EdgeRadius: 0
+--- !u!1 &80099248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3750518833630231616, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
+  m_PrefabInstance: {fileID: 3750518834668083262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &80099251
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80099248}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9cec462412afb4636862aa1e9653f736, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &123021579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4536422066638666021, guid: 2974d8961cc8b4397803079932c4b03f, type: 3}
@@ -410,6 +435,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157575772}
   m_CullTransparentMesh: 1
+--- !u!1 &212394497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3750518833942819631, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
+  m_PrefabInstance: {fileID: 3750518834668083262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &212394500
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212394497}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a89f713b17a14b86a0e7c262f530e13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &246319659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3750518834426221077, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
@@ -1339,6 +1389,7 @@ GameObject:
   - component: {fileID: 1906949626}
   - component: {fileID: 1906949628}
   - component: {fileID: 1906949627}
+  - component: {fileID: 1906949629}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -4048,6 +4099,26 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &1906949629
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906949625}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a89f713b17a14b86a0e7c262f530e13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2007837797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,6 +4617,14 @@ PrefabInstance:
       propertyPath: m_EdgeRadius
       value: -0.015
       objectReference: {fileID: 0}
+    - target: {fileID: 246319664, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 246319664, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 246319665, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
       propertyPath: crashAudioSrc
       value: 
@@ -4570,6 +4649,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3750518833942819629, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3750518833942819631, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -4580,11 +4663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3750518834426221075, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.539
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 3750518834426221075, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 3750518834426221075, guid: cf69bdea105d94a5da1f317d1073faec, type: 3}
       propertyPath: m_LocalPosition.z

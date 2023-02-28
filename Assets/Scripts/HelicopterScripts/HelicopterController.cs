@@ -21,6 +21,10 @@ public class HelicopterController : MonoBehaviour
         {
             SceneManager.LoadScene("Game");
         }
+        if (soldiersRescuedTF.text == "10")
+        {
+            SceneManager.LoadScene("VictoryScreen");
+        }
     }
 
     public void CollectPerson(GameObject personToRemove)
